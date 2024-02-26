@@ -21,3 +21,4 @@ C:\Users\gabdr\Desktop\Demo\LopushokApp\LopushokApp\obj\Debug\LopushokApp.csproj
 C:\Users\gabdr\Desktop\Demo\LopushokApp\LopushokApp\obj\Debug\LopushokApp.csproj.CopyComplete
 C:\Users\gabdr\Desktop\Demo\LopushokApp\LopushokApp\obj\Debug\LopushokApp.exe
 C:\Users\gabdr\Desktop\Demo\LopushokApp\LopushokApp\obj\Debug\LopushokApp.pdb
+C:\Users\gabdr\Desktop\Demo\LopushokApp\LopushokApp\obj\Debug\App.baml
