@@ -47,7 +47,7 @@
                                 <ColumnDefinition Width="3*"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <Image Grid.Column="0" Height="100" Source="{Binding Image}"/>
+                            <Image Grid.Column="0" Height="100" Source="{Binding ImageSource}"/>
                             <StackPanel Grid.Column="1">
                                 <StackPanel Orientation="Horizontal">
                                     <TextBlock Text="{Binding ProductType.Name}" FontSize="18"/>
