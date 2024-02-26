@@ -27,7 +27,7 @@ namespace LopushokApp.ADO
                 else
                 {
                     bytes = File.ReadAllBytes(Directory.GetParent(Environment.CurrentDirectory).Parent.FullName +
-                                              $"\\Resources\\Images\\products\\{Image}");
+                                              $"\\Resources\\Images\\{Image}");
                 }
 
                 var ms = new MemoryStream(bytes);
