@@ -35,8 +35,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -59,6 +68,42 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Compile Include="ADO\LopushokModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LopushokModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADO\LopushokModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LopushokModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADO\LopushokModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LopushokModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ADO\Material.cs">
+      <DependentUpon>LopushokModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADO\MaterialType.cs">
+      <DependentUpon>LopushokModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADO\Product.cs">
+      <DependentUpon>LopushokModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADO\ProductMaterial.cs">
+      <DependentUpon>LopushokModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADO\ProductType.cs">
+      <DependentUpon>LopushokModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADO\sysdiagrams.cs">
+      <DependentUpon>LopushokModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADO\Unit.cs">
+      <DependentUpon>LopushokModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -86,6 +131,14 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EntityDeploy Include="ADO\LopushokModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>LopushokModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ADO\LopushokModel.edmx.diagram">
+      <DependentUpon>LopushokModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -93,6 +146,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ADO\LopushokModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>LopushokModel.Context.cs</LastGenOutput>
+      <DependentUpon>LopushokModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="ADO\LopushokModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LopushokModel.edmx</DependentUpon>
+      <LastGenOutput>LopushokModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
