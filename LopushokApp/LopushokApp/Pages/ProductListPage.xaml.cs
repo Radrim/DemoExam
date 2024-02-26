@@ -23,6 +23,7 @@ namespace LopushokApp.Pages
         public ProductListPage()
         {
             InitializeComponent();
+            lvProducts.ItemsSource = App.Connection.Product.ToList();
         }
     }
 }

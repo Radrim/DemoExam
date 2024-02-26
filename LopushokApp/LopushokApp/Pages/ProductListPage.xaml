@@ -56,7 +56,7 @@
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal" Margin="0 5 0 0">
                                     <TextBlock Text="Материалы: " FontSize="18"/>
-                                    <ListView ItemsSource="{Binding Product_Material}">
+                                    <ListView ItemsSource="{Binding ProductMaterial}">
                                         <ListView.ItemsPanel>
                                             <ItemsPanelTemplate>
                                                 <WrapPanel/>
@@ -70,7 +70,7 @@
                                     </ListView>
                                 </StackPanel>
                             </StackPanel>
-                            <TextBlock Grid.Column="2" Text="{Binding Cost}" FontSize="18"/>
+                            <TextBlock Grid.Column="2" Text="{Binding Sum}" FontSize="18"/>
                         </Grid>
                     </DataTemplate>
                 </ListView.ItemTemplate>
