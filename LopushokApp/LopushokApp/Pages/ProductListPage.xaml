@@ -20,7 +20,7 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             
-            <TextBox x:Name="tbSearch" Padding="5 0 0 0" FontSize="18" Margin="10" Grid.Column="0" Text="Введите для поиска" VerticalContentAlignment="Center"/>
+            <TextBox x:Name="tbSearch" Padding="5 0 0 0" FontSize="18" Margin="10" Grid.Column="0" Text="" VerticalContentAlignment="Center" TextChanged="tbSearch_TextChanged"/>
             
             <ComboBox x:Name="cbSort" FontSize="18" Grid.Column="1" Margin="10" VerticalContentAlignment="Center" Text="Сортировка">
             </ComboBox>
